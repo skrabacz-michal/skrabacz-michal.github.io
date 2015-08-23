@@ -1,0 +1,722 @@
+---
+layout: default
+---
+
+<!-- Home Section start -->
+<section id="home" class="scroll-section root-sec grey lighten-5 home-wrap">
+    <div class="sec-overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="home-inner">
+                        <div class="center-align home-content">
+                            <h1 class="home-title">HI! I'm <br>Michał Skrabacz</h1>
+                            <h2 class="home-subtitle">Android evangelist from Wrocław, Poland</h2>
+                            <a href="#contact" class="hire-me-btn btn waves-effect waves-light btn-large brand-bg white-text regular-text">Hire Me <i class="mdi-content-send left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .container end -->
+        <div class="section-call-to-area">
+            <div class="container">
+                <div class="row">
+                    <a href="#about" class="btn-floating btn-large button-middle call-to-about section-call-to-btn animated btn-up btn-hidden" data-section="#about">
+                        <i class="mdi-navigation-expand-more"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- .container end -->
+        </div>
+    </div>
+</section>
+<!-- #home Section end -->
+
+<!-- About Section start -->
+<section id="about" class="scroll-section root-sec padd-tb-60 grey lighten-5 about-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="clearfix about-inner">
+
+                <div class="col-sm-12 col-md-4">
+                    <div class="person-about">
+                        <h3 class="about-subtitle">My Story</h3>
+                        <p>
+                            I'm a versatile and result oriented developer with over 5 years of professional experience in Android and Test Automation tools development.
+                        </p>
+                        <p>
+                            I've proven track record includes projects conducted in international environment (with European and American Customers) and business critical projects made for various key accounts.
+                        </p>
+                        <p>
+                            I'm excellent team player with very good communication skills. Additionally, I'm also experienced in running teams as a team leader.
+                        </p>
+                        <a class="waves-effect waves-light btn-large brand-bg white-text"><i class="mdi-content-archive left"></i> Download Resume</a>
+                    </div>
+                </div>
+                <!-- about me description -->
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="person-img wow fadeIn">
+                        <img class="z-depth-1" src="img/my.jpg" alt="">
+                    </div>
+                </div>
+                <!-- about me image -->
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="person-info">
+                        <h3 class="about-subtitle">Personal Information</h3>
+                        <h5><span>Name :</span> Michał Skrabacz</h5>
+                        <h5><span>Age :</span> 30 Years</h5>
+                        <h5><span>Phone :</span> +48 888 061 332</h5>
+                        <h5><span>Email :</span> quantum.mobile.corp@gmail.com</h5>
+                        <h5><span>Address :</span> Wrocław, Poland</h5>
+                    </div>
+
+                    <div class="about-social">
+                        <ul>
+                            <li>
+                                <a href="https://plus.google.com/u/1/104857504173305630383/" class="btn-floating waves-effect waves-light white"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/profile/view?id=AAIAAANRyG0Btmol-nA4-CCDkDDhmqAbzH49wlw" class="btn-floating waves-effect waves-light white"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/michal-skrabacz" class="btn-floating waves-effect waves-light white"><i class="fa fa-github"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/bulvahj" class="btn-floating waves-effect waves-light white"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/michal.skrabacz" class="btn-floating waves-effect waves-light white"><i class="fa fa-facebook"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- about me info -->
+
+            </div>
+        </div>
+    </div>
+    <!-- .container end -->
+</section>
+<!-- #about Section end -->
+
+<!-- Resume Section start -->
+<section id="resume" class="scroll-section ">
+
+    <section id="skill" class="root-sec white skill-wrap">
+        <div class="sec-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix skill-inner">
+                        <div class="col-sm-12 col-md-3">
+                            <div class="skill-left">
+                                <h2 class="title">Skills</h2>
+                                <p class="regular-text">Most of my experience is related with Android and J2EE applications development, in most cases requiring both low and high level programming and extensive knowledge of system architecture.</p>
+                            </div>
+                        </div>
+
+                        <!-- skills container -->
+                        <div class="col-sm-12 col-md-6 col-md-offset-1">
+                            <div class="skill-right">
+                                <div id="skillSlider" class="clearfix skill-graph">
+
+                                    {% for skill in site.data.skills %}
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="{{ skill.level }}">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">{{ skill.name }}</span>
+                                                        <div class="hr-wrap">
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="skill-count">{{ skill.level }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /skills container -->
+                    </div>
+                </div>
+                <div class="btn-wrapp skl-ctrl">
+                    <a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-left"><i class="mdi-navigation-chevron-left "></i></a>
+                    <a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-right"><i class="mdi-navigation-chevron-right "></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- .container end -->
+    </section>
+
+    <section id="libs" class="root-sec white skill-wrap">
+        <div class="sec-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix skill-inner">
+                        <div class="col-sm-12 col-md-3">
+                            <div class="skill-left">
+                                <h2 class="title">Frameworks</h2>
+                                <p class="regular-text">Set of libraries and frameworks to speed up development.</p>
+                            </div>
+                        </div>
+
+                        <!-- skills container -->
+                        <div class="col-sm-12 col-md-6 col-md-offset-1">
+                            <div class="skill-right">
+                                <div id="libsSlider" class="clearfix skill-graph">
+
+                                    {% for skill in site.data.libs %}
+
+                                    <!-- single skill -->
+                                    <div class="single-skill">
+                                        <div class="after-li">
+                                            <div class="singel-hr">
+                                                <div class="singel-hr-inner" data-height="{{ skill.level }}">
+                                                    <div class="skill-visiable">
+                                                        <span class="skill-title">{{ skill.name }}</span>
+                                                        <div class="hr-wrap">
+                                                            <div class="hrc"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span class="skill-count">{{ skill.level }}</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /single skill-->
+
+                                    {% endfor %}
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /skills container -->
+                    </div>
+                </div>
+                <div class="btn-wrapp lib-ctrl">
+                    <a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-left"><i class="mdi-navigation-chevron-left "></i></a>
+                    <a class="btn-floating waves-effect waves-light btn-large brand-bg white-text go go-right"><i class="mdi-navigation-chevron-right "></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- .container end -->
+    </section>
+
+    <section id="experience" class="root-sec padd-tb-120 brand-bg experience-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="experience-inner">
+                    <div class="col-sm-12 col-md-10 card-box-wrap">
+                        <div class="row">
+                            <div class="clearfix section-head experience-text">
+                                <div class="col-sm-12">
+                                    <h2 class="title">Experience</h2>
+                                    <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="overflow-hidden">
+                                    <div class="row">
+                                        <div id="experienceSlider" class="clearfix card-element-wrapper">
+
+                                            {% for company in site.data.companies %}
+
+                                            <div class="col-sm-4 cold-xs-12 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">{{ company.period }}</h2>
+                                                        <div class="valign-wrapper card-img-wrap">
+                                                            <img class="activator" src={{ company.img }} alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text">{{ company.position }}<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p>{{ company.name }}</p>
+                                                    </div>
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">{{ company.position }}<i class="mdi-navigation-close right"></i></span>
+                                                            <a href="{{ company.site }}"><p>{{ company.name }}</p></a>
+                                                        </div>
+                                                        <p class="rev-content">
+                                                            {{ company.desc }}
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            {% endfor %}
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapp exp-ctrl">
+                        <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+                        <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="root-sec grey lighten-5 padd-tb-120 education-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="education-inner">
+                    <div class="col-sm-12 col-md-10 card-box-wrap">
+                        <div class="row">
+                            <div class="clearfix section-head education-text">
+                                <div class="col-sm-12">
+                                    <h2 class="title">education</h2>
+                                    <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="overflow-hidden">
+                                    <div class="row">
+                                        <div id="educationSlider" class="clearfix card-element-wrapper">
+
+                                            {% for education in site.data.educations %}
+
+                                            <!-- single education -->
+                                            <div class="col-sm-4 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                                                <div class="card">
+                                                    <div class="card-image waves-effect waves-block waves-light">
+                                                        <h2 class="left-align card-title-top">{{ education.period }}</h2>
+                                                        <div class="card-img-wrap">
+                                                            <img class="activator" src="{{ education.img }}" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-content">
+                                                        <span class="card-title activator brand-text">{{ education.title }}<i class="mdi-navigation-more-vert right"></i></span>
+                                                        <p>{{ education.name }}</p>
+                                                    </div>
+                                                    <!-- Reveal content-->
+                                                    <div class="card-reveal">
+                                                        <div class="rev-title-wrap">
+                                                            <span class="card-title activator brand-text">{{ education.title }}<i class="mdi-navigation-close right"></i></span>
+                                                            <a href="{{ education.site }}"><p>{{ education.name }}</p></a>
+                                                        </div>
+                                                        <p class="rev-content">{{ education.desc }}</p>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- single education end -->
+
+                                            {% endfor %}
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-wrapp edu-ctrl">
+                        <a class="btn-floating waves-effect waves-light btn-large brand-bg go go-left"><i class="mdi-navigation-chevron-left"></i></a>
+                        <a class="btn-floating waves-effect waves-light btn-large brand-bg go go-right"><i class="mdi-navigation-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<!-- #resume Section end -->
+
+<!-- Portfolio Section start -->
+<!--<section id="portfolio" class="scroll-section root-sec white portfolio-wrap">-->
+    <!--<div class="padd-tb-120 brand-bg portfolio-top">-->
+        <!--<div class="portfolio-inner">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-sm-12">-->
+                        <!--<h2 class="title">PORTFOLIO</h2>-->
+                        <!--<ul class="inline-menu clearfix portfolio-category" id="portfolio-msnry-sort">-->
+                            <!--<li class="active"><a href="#" data-target="*">All</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="#" data-target=".category-1">Art</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="#" data-target=".category-2">Accessories</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="#" data-target=".category-3">Design</a>-->
+                            <!--</li>-->
+                            <!--<li><a href="#" data-target=".category-4">Fashion</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash; .container end &ndash;&gt;-->
+    <!--</div>-->
+    <!--<div id="portfolioModal" class="modal white">-->
+        <!--<div class="model-img"></div>-->
+        <!--<div class="modal-content">-->
+            <!--<h2 class="title">Lorem ipsum dolor sit fugit dolore.</h2>-->
+            <!--<p class="m-content">A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior.</p>-->
+        <!--</div>-->
+
+        <!--<div class="modal-footer">-->
+            <!--<a href="#" target="_blank" class="waves-effect btn-flat brand-text modal-action">Live Demo</a>-->
+            <!--<a href="#" class="waves-effect btn-flat brand-text modal-action modal-close">cancel</a>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--<div class="portfolio-bottom">-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+                <!--<div class="col-sm-12">-->
+                    <!--<ul class="clearfix protfolio-item" id="protfolio-msnry">-->
+
+                        <!--&lt;!&ndash; Single Portfolio&ndash;&gt;-->
+                        <!--<li class="single-port-item category-1 category-3">-->
+                            <!--<a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#"> &lt;!&ndash; Portfolio pop-up content&ndash;&gt;-->
+                                <!--<div class="protfolio-image">-->
+                                    <!--<img src="http://placehold.it/390x280" alt="portfolio"> &lt;!&ndash; portfolio thumbnail&ndash;&gt;-->
+                                    <!--<div class="protfolio-content waves-effect waves-block waves-light">-->
+                                        <!--<div class="protfolio-content__inner">-->
+                                            <!--<h2 class="p-title">item name</h2>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="p-overlay"></div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;/ single portfolio &ndash;&gt;-->
+
+                        <!--&lt;!&ndash; Single Portfolio&ndash;&gt;-->
+                        <!--<li class="single-port-item category-2 category-1">-->
+                            <!--<a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">-->
+                                <!--<div class="protfolio-image">-->
+                                    <!--<img src="http://placehold.it/390x280" alt="portfolio">-->
+                                    <!--<div class="protfolio-content waves-effect waves-block waves-light">-->
+                                        <!--<div class="protfolio-content__inner">-->
+                                            <!--<h2 class="p-title">item name</h2>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="p-overlay"></div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;/ single portfolio &ndash;&gt;-->
+
+                        <!--&lt;!&ndash; Single Portfolio&ndash;&gt;-->
+                        <!--<li class="single-port-item category-1 category-2">-->
+                            <!--<a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">-->
+                                <!--<div class="protfolio-image">-->
+                                    <!--<img src="http://placehold.it/390x280" alt="portfolio">-->
+                                    <!--<div class="protfolio-content waves-effect waves-block waves-light">-->
+                                        <!--<div class="protfolio-content__inner">-->
+                                            <!--<h2 class="p-title">item name</h2>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="p-overlay"></div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;/ single portfolio &ndash;&gt;-->
+
+                        <!--&lt;!&ndash; Single Portfolio&ndash;&gt;-->
+                        <!--<li class="single-port-item category-3">-->
+                            <!--<a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">-->
+                                <!--<div class="protfolio-image">-->
+                                    <!--<img src="http://placehold.it/390x280" alt="portfolio">-->
+                                    <!--<div class="protfolio-content waves-effect waves-block waves-light">-->
+                                        <!--<div class="protfolio-content__inner">-->
+                                            <!--<h2 class="p-title">item name</h2>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="p-overlay"></div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;/ single portfolio &ndash;&gt;-->
+
+                        <!--&lt;!&ndash; Single Portfolio&ndash;&gt;-->
+                        <!--<li class="single-port-item category-1 category-3 category-4">-->
+                            <!--<a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">-->
+                                <!--<div class="protfolio-image">-->
+                                    <!--<img src="http://placehold.it/390x280" alt="portfolio">-->
+                                    <!--<div class="protfolio-content waves-effect waves-block waves-light">-->
+                                        <!--<div class="protfolio-content__inner">-->
+                                            <!--<h2 class="p-title">item name</h2>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="p-overlay"></div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;/ single portfolio &ndash;&gt;-->
+
+                        <!--&lt;!&ndash; Single Portfolio&ndash;&gt;-->
+                        <!--<li class="single-port-item category-2 category-4">-->
+                            <!--<a href="#portfolioModal" class="waves-effect waves-block waves-light modal-trigger" data-image-source="http://placehold.it/650x350" data-title="Your awesome portfolio title" data-content="A portfolio is a collection of documents and writing that you assemble in order to demonstrate that you have the appropriate prior." data-demo-link="#">-->
+                                <!--<div class="protfolio-image">-->
+                                    <!--<img src="http://placehold.it/390x280" alt="portfolio">-->
+                                    <!--<div class="protfolio-content waves-effect waves-block waves-light">-->
+                                        <!--<div class="protfolio-content__inner">-->
+                                            <!--<h2 class="p-title">item name</h2>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="p-overlay"></div>-->
+                                <!--</div>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--&lt;!&ndash;/ single portfolio &ndash;&gt;-->
+
+                    <!--</ul>-->
+                    <!--&lt;!&ndash; portfolio load more button&ndash;&gt;-->
+                    <!--<a id="portfolio-item-loader" href="#" class="btn-floating btn-large waves-effect waves-light brand-bg"><i class="mdi-content-add"></i></a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+<!-- #portfolio Section end -->
+
+<!-- Testimonial Section end -->
+<section id="testimonial" class="scroll-section root-sec brand-bg padd-tb-120 testimonial-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="testimonial-inner">
+                <div class="col-sm-12 col-md-10 card-box-wrap">
+                    <div class="row">
+                        <div class="clearfix section-head testimonial-text">
+                            <div class="col-sm-12">
+                                <h2 class="title">testimonial</h2>
+                                <p class="regular-text">Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="overflow-hidden">
+                                <div class="row">
+                                    <div id="testimonialSlider" class="clearfix card-element-wrapper">
+                                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-duration=".7s">
+                                            <div class="card">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <div class="card-img-wrap">
+                                                        <img class="activator" src="images/avatar.png" alt="">
+                                                        <p class="saying-about">Amazing theme, amazing code and especially amazing support! I Really love your work.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <span class="card-title activator brand-text">Jonh Smith -</span>
+                                                    <a href="#">CEO, Apple Inc</a>
+                                                </div>
+                                            </div>
+                                        </div> <!-- ./single testimonial box -->
+                                        <div class="col-sm-6 single-card-box wow fadeInUpSmall" data-wow-delay=".2s" data-wow-duration=".7s">
+                                            <div class="card">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <div class="card-img-wrap">
+                                                        <img class="activator" src="images/avatar.png" alt="">
+                                                        <p class="saying-about">Amazing theme, amazing code and especially amazing support! I Really love your work.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <span class="card-title activator brand-text">Jonh Smith -</span>
+                                                    <a href="#">CEO, Apple Inc</a>
+                                                </div>
+                                            </div>
+                                        </div> <!-- ./single testimonial box -->
+                                        <div class="col-sm-6 single-card-box">
+                                            <div class="card">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <div class="card-img-wrap">
+                                                        <img class="activator" src="images/avatar.png" alt="">
+                                                        <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <span class="card-title activator brand-text">Jonh Smith -</span>
+                                                    <a href="#">CEO, Apple Inc</a>
+                                                </div>
+                                            </div>
+                                        </div> <!-- ./single testimonial box -->
+                                        <div class="col-sm-6 single-card-box">
+                                            <div class="card">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <div class="card-img-wrap">
+                                                        <img class="activator" src="images/avatar.png" alt="">
+                                                        <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <span class="card-title activator brand-text">Jonh Smith -</span>
+                                                    <a href="#">CEO, Apple Inc</a>
+                                                </div>
+                                            </div>
+                                        </div> <!-- ./single testimonial box -->
+                                        <div class="col-sm-6 single-card-box">
+                                            <div class="card">
+                                                <div class="card-image waves-effect waves-block waves-light">
+                                                    <div class="card-img-wrap">
+                                                        <img class="activator" src="images/avatar.png" alt="">
+                                                        <p class="saying-about">Amazing theme, amazing code and especially amazing support ! I Really love your work.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <span class="card-title activator brand-text">Jonh Smith -</span>
+                                                    <a href="#">CEO, Apple Inc</a>
+                                                </div>
+                                            </div>
+                                        </div> <!-- ./single testimonial box -->
+                                    </div> <!-- #testimonialSlider end -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-wrapp tmo-ctrl">
+                    <a class="btn-floating waves-effect waves-light btn-large white go go-left"><i class="mdi-navigation-chevron-left brand-text"></i></a>
+                    <a class="btn-floating waves-effect waves-light btn-large white go go-right"><i class="mdi-navigation-chevron-right brand-text"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./container end -->
+</section>
+<!-- #testimonial Section end -->
+
+<!-- Funfacts Section end -->
+<section id="funfacts" class="root-sec grey lighten-5 funfact-wrap">
+    <div class="sec-inner padd-tb-120">
+        <div class="container">
+            <div class="row">
+                <div class="funfact-inner">
+                    <div class="col-sm-4 funfact-box">
+                        <div class="center-align card-panel white">
+                            <div class="feature-box-outer">
+                                <div class="funfact-box-inner">
+                                    <div class="clearfix ">
+                                        <!--<i class="mdi-editor-insert-emoticon"></i>-->
+                                        <i class="mdi-maps-local-drink"></i>
+                                        <span class="num countNumb">1234</span>
+                                    </div>
+                                    <div class="context">Coffee drank</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- ./single fun fact box -->
+                    <div class="col-sm-4 funfact-box">
+                        <div class="center-align card-panel white">
+                            <div class="feature-box-outer">
+                                <div class="funfact-box-inner">
+                                    <div class="clearfix ">
+                                        <i class="mdi-action-done-all"></i>
+                                        <span class="num countNumb">21</span>
+                                    </div>
+                                    <div class="context">Project Completed</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- ./single fun fact box -->
+                    <div class="col-sm-4 funfact-box">
+                        <div class="center-align card-panel white">
+                            <div class="feature-box-outer">
+                                <div class="funfact-box-inner">
+                                    <div class="clearfix ">
+                                        <i class="mdi-social-cake"></i>
+                                        <span class="num countNumb">2</span>
+                                    </div>
+                                    <div class="context">Award Won</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- ./single fun fact box -->
+                </div>
+            </div>
+
+        </div>  <!-- .container end -->
+    </div>
+</section>
+<!-- #funfacts Section end -->
+
+<!-- Contact Section end -->
+<section id="contact" class="scroll-section root-sec brand-bg padd-tb-120 contact-wrap">
+    <div class="container">
+        <div class="row">
+            <div class="contact-inner">
+                <div class="col-sm-12 card-box-wrap">
+                    <div class="row">
+                        <div class="clearfix section-head contact-text">
+                            <div class="col-sm-12">
+                                <h2 class="title">Contact</h2>
+                                <p class="regular-text">al. Hallera 190/31, 53-203 Wrocław</p>
+                                <ul class="clearfix contact-info">
+                                    <li>+48 888 061 332</li>
+                                    <li>quantum.mobile.corp@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div> <!-- contact text end -->
+
+                        <div class="clearfix contact-form">
+
+                            <!-- Map Start -->
+                            <div class="col-sm-7">
+                                <div class="map-wrapper">
+                                    <div id="map"></div>
+                                </div>
+                            </div> <!-- Map end -->
+
+                            <!-- Contact Form start -->
+                            <div class="col-sm-5">
+                                <div class="clearfix card-panel grey lighten-5 cform-wrapper">
+                                    <form action="#" id="contactForm" novalidate>
+                                        <div class="input-field">
+                                            <input id="contact_name" type="text" name="contactName" class="validate input-box">
+                                            <label for="contact_name" class="input-label">Name</label>
+                                        </div>
+                                        <div class="input-field">
+                                            <input id="email" type="email" name="contactEmail" class="validate input-box">
+                                            <label for="email" class="input-label">Email</label>
+                                        </div>
+                                        <div class="input-field">
+                                            <input id="subject" type="text" name="contactSubject" class="validate input-box">
+                                            <label for="subject" class="input-label">Subject</label>
+                                        </div>
+                                        <div class="input-field textarea-input">
+                                            <textarea id="textarea1" name="contactMessage" class="validate materialize-textarea" style="height: 22px;"></textarea>
+                                            <label for="textarea1" class="input-label">Message</label>
+                                        </div>
+                                        <div class="input-field submit-wrap clearfix">
+                                            <button type="submit" class="left waves-effect btn-flat brand-text submit-btn">send message</button>
+                                            <div class="right form-loader-area">
+                                                <svg class="circular size-20" height="20" width="20">
+                                                    <circle class="path" cx="10" cy="10" r="7" fill="none" stroke-width="3" stroke-miterlimit="10" />
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div> <!-- ./contact form end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ./container end -->
+    <div class="section-call-to-area">
+        <div class="container">
+            <div class="row">
+                <a href="#home" class="btn-floating btn-large button-middle call-to-home section-call-to-btn animated btn-up btn-hidden" data-section="#home">
+                    <i class="mdi-navigation-expand-less"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- #contact Section end -->

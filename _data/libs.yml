@@ -1,0 +1,29 @@
+- name: "Calabash"
+  level: "90%"
+
+- name: "Hawk"
+  level: "90%"
+
+- name: "Fresco"
+  level: "90%"
+
+- name: "Crashlytics"
+  level: "90%"
+
+- name: "Espresso"
+  level: "85%"
+
+- name: "Realm"
+  level: "80%"
+
+- name: "Stetho"
+  level: "80%"
+
+- name: "Dagger2"
+  level: "70%"
+
+- name: "RxKotlin"
+  level: "60%"
+
+- name: "Polymer"
+  level: "40%"

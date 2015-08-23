@@ -1,0 +1,20 @@
+- name: "Andorid"
+  level: "90%"
+
+- name: "Java"
+  level: "85%"
+
+- name: "Kotlin"
+  level: "65%"
+
+- name: "C/C++"
+  level: "60%"
+
+- name: "Html"
+  level: "50%"
+
+- name: "Css"
+  level: "40%"
+
+- name: "Photoshop"
+  level: "20%"

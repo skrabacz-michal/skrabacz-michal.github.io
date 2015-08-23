@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+  {% include head.html %}
+
+  <body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+      <div class="loader">
+          <svg class="circle-loader" height="50" width="50">
+              <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="6" stroke-miterlimit="10" />
+          </svg>
+      </div>
+  </div><!--preloader end-->
+
+  <main id="app" class="main-section">
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+      {% include footer.html %}
+      {% include js.html %}
+
+  </main>
+
+  </body>
+
+</html>
