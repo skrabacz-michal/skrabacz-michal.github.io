@@ -716,7 +716,8 @@ header.nav.hide-menu {
  ----------------------------------- */
 
 #skill {
-    background: url('../img/skills-bg.jpg') no-repeat scroll center center / cover;
+    /*background: url('../img/skills-bg.jpg') no-repeat scroll center center / cover;*/
+    background: #fff;
 }
 
 #skill .sec-overlay {
@@ -724,15 +725,52 @@ header.nav.hide-menu {
     height: 100%;
     width: 100%;
     padding-top: 60px;
-    padding-bottom: 100px; 
+    padding-bottom: 100px;
 }
 
 #libs {
-    background: url('../img/skills-bg.jpg') no-repeat scroll center center / cover;
+    /*background: url('../img/libs-bg.jpg') no-repeat scroll center center / cover;*/
+    background: #fff;
 }
 
 #libs .sec-overlay {
     background: rgba(255,255,255, .92);
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+#libs {
+    /*background: url('../img/libs-bg.jpg') no-repeat scroll center center / cover;*/
+    background: #fff;
+}
+
+#experience {
+    background: url('../img/bkg/experience.jpg') no-repeat fixed center center / cover;
+}
+
+#experience .sec-overlay {
+    /*background: rgba(81,31,81, .150);*/
+    background: rgba(0,0,0, .40);
+    height: 100%;
+    width: 100%;
+}
+
+#libs .sec-overlay {
+    background: rgba(255,255,255, .92);
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+#download {
+    background: url('../img/bkg/resume.jpg') no-repeat fixed center center / cover;
+}
+
+#download .sec-overlay {
+    background: rgba(0,0,0, .5);
     height: 100%;
     width: 100%;
     padding-top: 60px;
@@ -1343,13 +1381,25 @@ header.nav.hide-menu {
  ----------------------------------- */
 
 #funfacts {
-    background: url('../img/fun-facts-bg.jpg') no-repeat scroll center center / cover;
+    background: url('../img/fun-facts-bg.jpg') no-repeat fixed center center / cover;
 }
 
 #funfacts .sec-inner {
-    background: rgba(255,255,255, .92);
+    background: rgba(0,0,0, .5);
     height: 100%;
     width: 100%;
+}
+
+#languages {
+    background: url('../img/bkg/language.jpg') no-repeat fixed center center / cover;
+    /*background: #511f51!important;*/
+}
+
+#languages .sec-inner {
+    background: rgba(0,0,0, .5);
+    height: 100%;
+    width: 100%;
+    margin-bottom: -50px;
 }
 
 .funfact-box .card-panel {

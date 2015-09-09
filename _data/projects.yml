@@ -1,0 +1,24 @@
+- _id: "kompakt"
+  title: "Kompakt"
+  categories: "Android"
+  url: "https://play.google.com/store/apps/details?id=de.welt.kompakt"
+  desc: "This is the news app that you need and want. Finally some good news. We make every message for you a compact story: all you need for your day News, minus unnecessary fuss, plus fun. KOMPAKT comes to the point, informative, entertaining, easy to read, good-looking. And good to use: A thumbs ranges."
+
+- _id: "ff"
+  title: "1414"
+  categories: "Android"
+  url: "https://play.google.com/store/apps/details?id=de.bild.android.ff"
+  desc: "Your new photo and video app - with more than 170,000 members, more than one million photos and videos and a payout of more than 200,000 euros in bonuses! Our mission: We want you to have fun. Keep your most beautiful moments with your smartphone and share photos and videos with others. Take part in the current, exciting and creative missions and let yourself be rewarded with money or great prizes."
+
+- _id: "good"
+  title: "Good"
+  categories: "Android"
+  url: "https://play.google.com/store/apps/details?id=com.good.android.gfe"
+  desc: "For corporate IT, Good for Enterprise™ protects corporate data in motion, in use and at rest on Android devices using government grade encryption. With a unique container-based approach, it allows IT to set granular security policies at the application level, such as strong password requirements and control of data sharing with other apps or cloud-based services. IT can also remote wipe or lock corporate data while preserving personal information."
+
+- _id: "ofarbaj"
+  title: "Ofarbaj"
+  categories: "Web"
+  url: "http://ofarbaj.com/"
+  desc: "Portfolio template for graphic designer (using Jekyll)."
+
