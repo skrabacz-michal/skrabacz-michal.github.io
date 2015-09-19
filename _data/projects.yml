@@ -1,3 +1,9 @@
+- _id: "upday"
+  title: "Upday"
+  categories: "Android"
+  url: "https://play.google.com/store/apps/details?id=de.axelspringer.yana"
+  desc: "Upday is your new news app - exclusive to Samsung smartphones. Upday place for you stories that interest you. With a lot of rocket science and a bit of magic we are looking for you along your news from hundreds of sources. And the more you upday used, the better are our recommendations for you. So you get your own personal news stream - relevant, inspirational and clear. In addition to your personal Stream provides you our experienced editorial team upday the most important thing from Germany and the world together - to the point and always top-to-date."
+
 - _id: "kompakt"
   title: "Kompakt"
   categories: "Android"
