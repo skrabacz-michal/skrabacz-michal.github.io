@@ -756,6 +756,7 @@ if ( $countNumb.length > 0 ) {
 
 
 $('#contactForm').on('submit', function(e){
+    console.log("submit");
 	e.preventDefault();
 	var $this = $(this),
 		data = $(this).serialize(),
@@ -765,15 +766,37 @@ $('#contactForm').on('submit', function(e){
 		loader = $this.find('.form-loader-area'),
 		submitBtn = $this.find('button, input[type="submit"]');
 
+    var emailError = {email: "Please enter a valid email address."};
+    if (!validateEmail((document.getElementById("email").value))) {
+        error(emailError);
+        swal("Error!", emailError.email, "error");
+        return
+    }
+    var nameError = {name: "Please enter your name."};
+    if (!validateName((document.getElementById("contact_name").value))) {
+        error(nameError);
+        swal("Error!", nameError.name, "error");
+        return
+    }
+    var msgError = {message: "Please enter your message."};
+    if (!validateName((document.getElementById("textarea1").value))) {
+        error(msgError);
+        swal("Error!", msgError.message, "error");
+        return
+    }
+
+    console.log(email);
 	loader.show();
 	submitBtn.attr('disabled', 'disabled');
 
 	function success(response) {
+        console.log("success");
 		swal("Thanks!", "Your message has been sent successfully!", "success");
 		$this.find("input, textarea").val("");
 	}
 
 	function error(response) {
+        console.log("error");
 		$this.find('input.invalid, textarea.invalid').removeClass('invalid');
 		if ( response.name ) {
 			name.removeClass('valid').addClass('invalid');
@@ -788,20 +811,30 @@ $('#contactForm').on('submit', function(e){
 		}
 	}
 
+    function validateEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+    }
+
+    function validateName(name) {
+        return name.length > 2;
+    }
+
 	$.ajax({
 		type: "POST",
-		url: "inc/sendEmail.php",
-		data: data
+        url: "//formspree.io/michal.skrabacz.corp@gmail.com",
+		data: data,
+        dataType : "json"
 	}).done(function(res){
+		var response = JSON.parse(JSON.stringify(res));
+        console.log("get response: " + response);
 
-		var response = JSON.parse(res);
-
-		if ( response.OK ) {
+        console.log("done");
+		if ( response.success ) {
 			success(response);
 		} else {
 			error(response);
 		}
-
 
 		var hand = setTimeout(function(){
 			loader.hide();

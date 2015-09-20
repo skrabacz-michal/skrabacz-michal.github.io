@@ -1065,6 +1065,9 @@ header.nav.hide-menu {
     position: relative;
     width: 100%;
     overflow: hidden;
+    padding-left: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .protfolio-image img {
