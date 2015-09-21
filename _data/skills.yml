@@ -5,6 +5,9 @@
   level: "85%"
 
 - name: "Kotlin"
+  level: "80%"
+
+- name: "Jenkins"
   level: "75%"
 
 - name: "C/C++"
