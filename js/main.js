@@ -822,7 +822,7 @@ $('#contactForm').on('submit', function(e){
 
 	$.ajax({
 		type: "POST",
-        url: "//formspree.io/michal.skrabacz.corp@gmail.com",
+        url: "//formspree.io/quantum.mobile.corp@gmail.com",
 		data: data,
         dataType : "json"
 	}).done(function(res){
