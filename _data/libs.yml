@@ -1,13 +1,10 @@
 - name: "Calabash"
   level: "90%"
 
-- name: "Hawk"
+- name: "Gradle"
   level: "90%"
 
-- name: "Fresco"
-  level: "90%"
-
-- name: "Crashlytics"
+- name: "Retrofit"
   level: "90%"
 
 - name: "Espresso"
@@ -19,11 +16,17 @@
 - name: "Stetho"
   level: "80%"
 
+- name: "Fresco"
+  level: "70%"
+
 - name: "Dagger2"
   level: "70%"
 
 - name: "RxKotlin"
   level: "60%"
+
+- name: "Maven"
+  level: "50%"
 
 - name: "Polymer"
   level: "40%"
