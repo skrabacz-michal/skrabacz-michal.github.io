@@ -2,7 +2,7 @@
 title: Quantum Mobile Michal Skrabacz
 email: quantum.mobile.corp@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-Official web site Quantum Mobile Michal Skrabacz company.
+  Official web site Quantum Mobile Michal Skrabacz company.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://qmskrabacz.com" # the base hostname & protocol for your site
 twitter_username: bulvahj
