@@ -16,6 +16,9 @@
 - name: "Html"
   level: "50%"
 
+- name: "Ruby"
+  level: "50%"
+
 - name: "Css"
   level: "40%"
 
