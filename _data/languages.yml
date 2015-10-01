@@ -1,0 +1,11 @@
+- name: "English"
+  level: "503"
+  percent: "80%"
+
+- name: "German"
+  level: "156"
+  percent: "25%"
+
+- name: "Spanish"
+  level: "125"
+  percent: "20%"

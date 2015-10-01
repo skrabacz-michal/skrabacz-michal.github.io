@@ -187,33 +187,8 @@ layout: default
                             </div>
                         </div>
 
-                        <div class="col-sm-4 funfact-box">
-                            <div class="center-align card-panel white">
-                                <div class="feature-box-outer">
-                                    <div class="funfact-box-inner">
-                                        <div class="clearfix ">
-                                            <!--<i class="mdi-editor-insert-emoticon"></i>-->
-                                            <ul class="fun_progress">
-                                                <!--  Item  -->
-                                                <li data-name="English" data-percent=" 80%"> <svg viewBox="-10 -10 220 220">
-                                                    <g fill="none" stroke-width="9" transform="translate(100,100)">
-                                                        <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                                        <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                                        <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                                        <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                                        <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                                        <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                                    </g>
-                                                </svg> <svg viewBox="-10 -10 220 220">
-                                                    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="503"></path>
-                                                </svg> </li>
-                                                <!-- end item-->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- ./single fun fact box -->
+
+                        {% for language in site.data.languages %}
 
                         <div class="col-sm-4 funfact-box">
                             <div class="center-align card-panel white">
@@ -223,7 +198,7 @@ layout: default
                                             <!--<i class="mdi-editor-insert-emoticon"></i>-->
                                             <ul class="fun_progress">
                                                 <!--  Item  -->
-                                                <li data-name="Spanish" data-percent="25%"> <svg viewBox="-10 -10 220 220">
+                                                <li data-name="{{ language.name }}" data-percent="{{ language.percent }}"> <svg viewBox="-10 -10 220 220">
                                                     <g fill="none" stroke-width="9" transform="translate(100,100)">
                                                         <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
                                                         <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
@@ -233,7 +208,7 @@ layout: default
                                                         <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
                                                     </g>
                                                 </svg> <svg viewBox="-10 -10 220 220">
-                                                    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="156"></path>
+                                                    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="{{ language.level }}"></path>
                                                 </svg> </li>
                                                 <!-- end item-->
                                             </ul>
@@ -243,33 +218,7 @@ layout: default
                             </div>
                         </div> <!-- ./single fun fact box -->
 
-                        <div class="col-sm-4 funfact-box">
-                            <div class="center-align card-panel white">
-                                <div class="feature-box-outer">
-                                    <div class="funfact-box-inner">
-                                        <div class="clearfix ">
-                                            <!--<i class="mdi-editor-insert-emoticon"></i>-->
-                                            <ul class="fun_progress">
-                                                <!--  Item  -->
-                                                <li data-name="German" data-percent=" 20%"> <svg viewBox="-10 -10 220 220">
-                                                    <g fill="none" stroke-width="9" transform="translate(100,100)">
-                                                        <path d="M 0,-100 A 100,100 0 0,1 86.6,-50" stroke="url(#cl1)"/>
-                                                        <path d="M 86.6,-50 A 100,100 0 0,1 86.6,50" stroke="url(#cl2)"/>
-                                                        <path d="M 86.6,50 A 100,100 0 0,1 0,100" stroke="url(#cl3)"/>
-                                                        <path d="M 0,100 A 100,100 0 0,1 -86.6,50" stroke="url(#cl4)"/>
-                                                        <path d="M -86.6,50 A 100,100 0 0,1 -86.6,-50" stroke="url(#cl5)"/>
-                                                        <path d="M -86.6,-50 A 100,100 0 0,1 0,-100" stroke="url(#cl6)"/>
-                                                    </g>
-                                                </svg> <svg viewBox="-10 -10 220 220">
-                                                    <path d="M200,100 C200,44.771525 155.228475,0 100,0 C44.771525,0 0,44.771525 0,100 C0,155.228475 44.771525,200 100,200 C155.228475,200 200,155.228475 200,100 Z" stroke-dashoffset="125"></path>
-                                                </svg> </li>
-                                                <!-- end item-->
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> <!-- ./single fun fact box -->
+                        {% endfor %}
 
                     </div>
                 </div>
