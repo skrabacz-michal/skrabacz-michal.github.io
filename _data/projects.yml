@@ -1,3 +1,9 @@
+- _id: "inside"
+  title: "inside.app"
+  categories: "Android"
+  url: "https://play.google.com/store/apps/details?id=com.axelspringer.inside"
+  desc: "inside.app is a magazine for your Smartphone. Read feature stories, browse photos and watch videos about and for the people behind Axel Springer and its various brands worldwide. Not only for members of the Axel Springer family but free to read for everyone."
+
 - _id: "upday"
   title: "Upday"
   categories: "Android"
