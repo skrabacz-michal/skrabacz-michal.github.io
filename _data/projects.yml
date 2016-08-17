@@ -1,3 +1,9 @@
+- _id: "exsed"
+  title: "ExSed"
+  categories: "Android"
+  url: "https://play.google.com/store/apps/details?id=fi.ukkterveyspalvelut.exsed"
+  desc: "Exced service tells measured information about your moving, staying still and sleep. In addition to that, we compare your movement and staying still to movement and staying still of diabetics and heart patiens."
+
 - _id: "inside"
   title: "inside.app"
   categories: "Android"
