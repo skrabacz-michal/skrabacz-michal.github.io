@@ -1,5 +1,11 @@
-- name: "Calabash"
+- name: "RxKotlin"
+  level: "95%"
+
+- name: "RxJava"
   level: "90%"
+
+- name: "RxSwift"
+  level: "80%"
 
 - name: "Gradle"
   level: "90%"
@@ -13,20 +19,14 @@
 - name: "Realm"
   level: "80%"
 
-- name: "Stetho"
-  level: "80%"
-
-- name: "Fresco"
-  level: "70%"
-
 - name: "Dagger2"
   level: "70%"
 
-- name: "RxKotlin"
-  level: "60%"
+- name: "Kodein"
+  level: "70%"
+
+- name: "Coroutines"
+  level: "70%"
 
 - name: "Maven"
   level: "50%"
-
-- name: "Polymer"
-  level: "40%"

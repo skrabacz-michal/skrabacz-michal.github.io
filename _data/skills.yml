@@ -1,29 +1,17 @@
-- name: "Andorid"
+- name: "Kotlin"
   level: "90%"
 
 - name: "Java"
   level: "85%"
 
-- name: "Kotlin"
-  level: "80%"
+- name: "Swift"
+  level: "70%"
 
-- name: "Jenkins"
-  level: "75%"
+- name: "Android"
+  level: "90%"
 
-- name: "C/C++"
-  level: "60%"
-
-- name: "Html"
+- name: "iOS"
   level: "50%"
 
-- name: "Ruby"
-  level: "50%"
-
-- name: "Css"
-  level: "40%"
-
-- name: "Python"
-  level: "30%"
-
-- name: "Photoshop"
-  level: "20%"
+- name: "CI&CD"
+  level: "90%"
