@@ -15,3 +15,6 @@
 
 - name: "CI&CD"
   level: "90%"
+
+-name: "Clean Architecture"
+ level: "80%"
